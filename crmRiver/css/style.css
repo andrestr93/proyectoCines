@@ -1,0 +1,181 @@
+@font-face {
+  font-family:serif_pro;
+  src: url(/fuentes/SourceSerifPro-Black.ttf) 
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: serif_pro
+}
+
+
+
+body {
+  background: no-repeat;
+  background: url("../img/rio.png") no-repeat center center fixed;
+  background-color: black;
+  margin-top: 10px;
+}
+
+#logo p {
+  text-align: center;
+  color: white;
+  font-family: serif_pro;
+  font-size: 90px;
+  letter-spacing: 18px;
+}
+
+#login {
+  text-align: center ;
+  margin-left: 37%;
+  border: 5px solid #ffc629;
+  width: 500px;
+  height: 300px;
+  font-size: 15px;
+  padding-bottom: 50px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+form {
+  
+  padding: 25px;
+}
+
+input {
+  margin-bottom: 25px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+#login label {
+  font-size: 25px;
+  color: black;
+}
+
+#login p {
+  font-size: 25px;
+}
+
+#button {
+  margin-top: 25px;
+
+  font-size: 25px;
+
+  background-color: #ffc629;
+
+  color: black;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+#enlaces {
+  display: block;
+  text-align: center;
+}
+
+#enlaces a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+ul li{
+ list-style: none;
+}
+
+
+#menu{
+  font-family: serif_pro;
+  line-height: 46px;
+  margin-left: 30%;
+  list-style: none;  
+
+}
+
+
+#menu li a {
+  border-left: 1px solid white;
+  background-color: #ffc629;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+
+}
+
+#menu li{
+font-family: self-pro;
+float: left;
+}
+
+#menu li a:hover{
+  background-color: black;
+}
+
+#menu li ul {
+
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+#menu li:hover ul{
+
+  display: block;
+  border-top: 1px solid white;
+  
+}
+
+#menu a {
+  display: block;
+ 
+}
+
+
+
+/*
+#menu{
+
+  margin-top: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: yellowgreen;
+  margin-bottom: 20px;
+  line-height: 46px;
+  list-style: none;   
+}
+
+#menu li{
+  height: 46px;
+  display: inline-block;
+
+}
+
+#menu li :hover{
+  background-color: black;
+  
+
+
+}
+
+#menu a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-right: 1px  solid black;
+
+
+}
+
+*/
