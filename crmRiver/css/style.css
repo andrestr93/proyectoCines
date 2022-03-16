@@ -1,13 +1,21 @@
+
 @font-face {
   font-family: serif_pro;
-  src: url(/fuentes/SourceSerifPro-Black.ttf);
+  src: url(../fuentes/SourceSerifPro-Black.ttf);
 }
+
+@font-face {
+  font-family: batman;
+  src: url(../fuentes/batman.ttf);
+}
+
 
 * {
   margin: 0px;
   padding: 0px;
   font-family: serif_pro;
 }
+
 
 header {
   margin-top: auto;
@@ -23,7 +31,7 @@ body {
   margin-top: 8%;
   text-align: center;
   color: white;
-  font-family: serif_pro;
+  font-family: batman;
   font-size: 90px;
   letter-spacing: 18px;
 }
@@ -46,6 +54,7 @@ form {
 }
 
 input {
+  border: 0px;
   margin-bottom: 25px;
   margin-top: 6px;
   font-size: 25px;
@@ -77,6 +86,7 @@ h4 {
 }
 
 #button {
+  border: 0px;
   margin-top: 25px;
   font-size: 25px;
   background-color: white;
