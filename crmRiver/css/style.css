@@ -78,13 +78,9 @@ h4 {
 
 #button {
   margin-top: 25px;
-
   font-size: 25px;
-
   background-color: white;
-
   color: black;
-
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
@@ -95,11 +91,19 @@ ul li {
   list-style: none;
 }
 
+
+#menucont{
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #menu {
+  margin-left: 25px;
   font-family: serif_pro;
   line-height: 46px;
-  margin-left: 30%;
   list-style: none;
+  text-align: center;
 }
 
 #menu li a {
