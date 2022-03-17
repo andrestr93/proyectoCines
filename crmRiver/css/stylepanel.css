@@ -31,15 +31,16 @@
     text-align: center;
     font-family: serif_pro;
     list-style: none;
+    padding-top: 5px;
     
   }
 
   #menu ul{
     list-style: none;
     display: inline-block;
-    margin-top: 6px;
+    
   }
-  
+
   #menu li a {
     background-color: #ffc629;
     text-decoration: none;
@@ -53,8 +54,7 @@
   #menu li {
     font-family: self-pro;
     float: left;
-    border: 2px solid black;
-    border-radius: 4px;
+
   }
 
   
@@ -66,7 +66,10 @@
   
   #menu li:hover ul {
     display: block;
+
   }
+
+ 
   
   #menu a {
     display: block;
@@ -84,6 +87,11 @@
     border: 1px solid black;
     float: left;
 
+  }
+
+
+  div:nth-child(3){
+    width: 400px;
   }
   .container h2{
     text-align: center;

@@ -7,6 +7,7 @@
     <title>Panel Usuario</title>
 
     <link rel="stylesheet" type="text/css" href="css/stylepanel.css" />
+    <link rel="stylesheet" type="text/css" href="css/calendar.css" />
   </head>
   <body>
     <header>
@@ -32,36 +33,110 @@
     <div id="container-principal">
       <div class="container">
         <h2>Clientes</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
-          Ipsum passages, and more recently 
-          with desktop publishing software like Aldus
-           PageMaker including versions of Lorem Ipsum.</p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
       </div>
-      
-      
+
       <div class="container">
         <h2>Consultores</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
-          Ipsum passages, and more recently 
-          with desktop publishing software like Aldus
-           PageMaker including versions of Lorem Ipsum.</p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
       </div>
 
-      
       <div class="container">
         <h2>Calendario</h2>
-        <form> <input type=”date” id=”fecha” name=”fecha” required=”required”> </form>
-      </div>
 
+        <div class="calendar">
+          <div class="calendar__header">
+            <button type="button" class="control control--prev">&lt;</button>
+            <span class="month-name">Oct 2019</span>
+            <button type="button" class="control control--next">&gt;</button>
+          </div>
+          <div class="calendar_body">
+            <div class="grid">
+              <div class="grid__header">
+                <span class="grid__cell grid__cell--gh">Lu</span>
+                <span class="grid__cell grid__cell--gh">Mar</span>
+                <span class="grid__cell grid__cell--gh">Mie</span>
+                <span class="grid__cell grid__cell--gh">Jue</span>
+                <span class="grid__cell grid__cell--gh">Vie</span>
+                <span class="grid__cell grid__cell--gh">Sa</span>
+                <span class="grid__cell grid__cell--gh">Do</span>
+              </div>
+              <div class="grid__body">
+                <span class="grid__cell grid__cell--gd grid__cell--selected">1</span>
+                <span class="grid__cell grid__cell--gd">2</span>
+                <span class="grid__cell grid__cell--gd">3</span>
+                <span class="grid__cell grid__cell--gd">4</span>
+                <span class="grid__cell grid__cell--gd">5</span>
+                <span class="grid__cell grid__cell--gd">6</span>
+                <span class="grid__cell grid__cell--gd">7</span>
+                <span class="grid__cell grid__cell--gd">8</span>
+                <span class="grid__cell grid__cell--gd">9</span>
+                <span class="grid__cell grid__cell--gd">10</span>
+                <span class="grid__cell grid__cell--gd">11</span>
+                <span class="grid__cell grid__cell--gd">12</span>
+                <span class="grid__cell grid__cell--gd">13</span>
+                <span class="grid__cell grid__cell--gd">14</span>
+                <span class="grid__cell grid__cell--gd">15</span>
+                <span class="grid__cell grid__cell--gd">16</span>
+                <span class="grid__cell grid__cell--gd">17</span>
+                <span class="grid__cell grid__cell--gd">18</span>
+                <span class="grid__cell grid__cell--gd">19</span>
+                <span class="grid__cell grid__cell--gd">20</span>
+                <span class="grid__cell grid__cell--gd">21</span>
+                <span class="grid__cell grid__cell--gd">22</span>
+                <span class="grid__cell grid__cell--gd">23</span>
+                <span class="grid__cell grid__cell--gd">24</span>
+                <span class="grid__cell grid__cell--gd">25</span>
+                <span class="grid__cell grid__cell--gd">26</span>
+                <span class="grid__cell grid__cell--gd">27</span>
+                <span class="grid__cell grid__cell--gd">28</span>
+                <span class="grid__cell grid__cell--gd">29</span>
+                <span class="grid__cell grid__cell--gd">30</span>
+                <span class="grid__cell grid__cell--gd">31</span>
+                <span class="grid__cell grid__cell--gd">32</span>
+                <span class="grid__cell grid__cell--gd">33</span>
+                <span class="grid__cell grid__cell--gd grid__cell--disabled">34</span>
+                <span class="grid__cell grid__cell--gd grid__cell--disabled">35</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="container">
         <h2>Vision</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem 
-          Ipsum passages, and more recently 
-          with desktop publishing software like Aldus
-           PageMaker including versions of Lorem Ipsum.</p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
       </div>
-
     </div>
   </body>
 </html>
