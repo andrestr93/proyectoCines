@@ -28,6 +28,8 @@ body {
 }
 
 #logo p {
+  text-decoration-line: overline;
+  text-decoration-color: #ffc629;
   margin-top: 8%;
   text-align: center;
   color: white;
