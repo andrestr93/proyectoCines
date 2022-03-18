@@ -1,6 +1,7 @@
 
 /**
  *   *CLASE CALENDARIO
+ *   * La clase calendario tenemos un constructor que llama a una función que contiene el calendario 
 
 */
 
@@ -8,13 +9,14 @@ class Calendar {
 
     constructor(id) {
 
-        this.Calendar = document.getElementById(id)
+        this.elCalendar = document.getElementById(id)
+        this.showTemplate()
     }
 
 
     showTemplate() {
 
-        this.Calendar.innerHTML = this.template();
+        this.elCalendar.innerHTML = this.template();
     }
 
 
@@ -85,9 +87,8 @@ class Calendar {
      </div>
    </div>`
 
-        return template
+        return template;
     }
-
 
 
 }
