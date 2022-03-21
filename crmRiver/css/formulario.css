@@ -1,0 +1,33 @@
+@font-face {
+    font-family: serif_pro;
+    src: url(../fuentes/SourceSerifPro-Black.ttf);
+  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: serif_pro;
+    }
+
+
+    #box{
+
+        max-width: 500px;
+
+
+    }
+
+    #box label{
+
+        text-align: center;
+    }
+
+    #box input{
+
+        text-align: center;
+    }
+
+
+    
+
+  

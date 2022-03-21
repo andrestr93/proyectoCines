@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario candidato</title>
+    <link rel="stylesheet" type="text/css" href="css/formulario.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <div id="box">
+      <!-- cargar formulario  -->
+
+      <h2>Formulario de Contacto</h2>
+      <br/>
+      <form id="form-contact">
+        <label for="name">Nombre</label>
+
+        <br/>
+
+        <input type="text" name="name" data-validation="alphanumeric" />
+        <br/><br/>
+
+        <label for="surname">Apellidos</label>
+        <br/>
+
+        <input type="text" name="surname" data-validation="alphanumeric" />
+        <br/><br/>
+
+        <label for="email">Email</label>
+
+        <br/>
+
+        <input type="email" name="email" data-validation="email" />
+
+        <br/><br/>
+
+        <label for="date">Fec.Nac</label>
+
+        <br/>
+
+        <input
+          type="text"
+          name="date"
+          data-validation="date"
+          data-validation-format="dd-mm-yyy"
+        />
+        <br/><br/>
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>
