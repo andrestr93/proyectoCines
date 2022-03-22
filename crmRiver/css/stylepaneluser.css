@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: serif_pro;
-    font-size: 20px;
   }
   
   header {
@@ -19,42 +18,32 @@
     background-color: white;
   }
 
-  input{
-
-    margin-left: 20px;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-
-  }
-
-  h1{
-
-    margin-top: 10px;
-    text-align: center;
-
-  }
-
-  h2{
+  div{
 
     text-align: center;
   }
-  
-  #container-principal{
 
-    margin-top: 25px;
- 
+
+
+
+
+  /*
+  #alta_candidato{
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    border: 1px solid black;
+    padding: 8px;
+
+
+
 
 
   }
+*/
 
-  .container{
-    width: 250px;
-    height: 600px;
-    float: left;
-    border-left: 1px solid black;
 
-  }
 
 
 

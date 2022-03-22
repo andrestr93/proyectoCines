@@ -4,28 +4,29 @@
     <meta charset="UTF-8" />
     <title>Formulario candidato</title>
     <link rel="stylesheet" type="text/css" href="css/formulario.css" />
+    <!--cargo mi Script-->
+    <script src="js/main.js"></script>
   </head>
   <body>
     <header></header>
 
     <div id="box">
       <!-- cargar formulario  -->
-
-      <h2>Formulario de Contacto</h2>
-      <br/>
+      <h2>Datos del consultor</h2>
+      <br />
       <form id="form-contact">
         <label for="name">Nombre</label>
 
         <br/>
 
         <input type="text" name="name" data-validation="alphanumeric" />
-        <br/><br/>
+        <br/><br />
 
         <label for="surname">Apellidos</label>
         <br/>
 
         <input type="text" name="surname" data-validation="alphanumeric" />
-        <br/><br/>
+        <br/><br />
 
         <label for="email">Email</label>
 
@@ -33,20 +34,41 @@
 
         <input type="email" name="email" data-validation="email" />
 
-        <br/><br/>
+        <br/><br />
 
-        <label for="date">Fec.Nac</label>
+        <label for="date">Telefono</label>
 
         <br/>
 
-        <input
-          type="text"
-          name="date"
-          data-validation="date"
-          data-validation-format="dd-mm-yyy"
-        />
-        <br/><br/>
-        <input type="submit" value="Enviar" />
+        <input type="text" name="telephone" data-validation="numeric" />
+
+        <br/><br />
+
+        <label for="name">Tecnología</label>
+
+        <br/>
+
+        <input type="text" name="tecnology" data-validation="numeric" />
+
+        <br/><br />
+
+        <label for="name">Adjuntar documentos</label>
+
+        <br/><br/><br/>
+
+        <input type="file" name="document1" data-validation="file">
+        
+        <br/><br/><br/>
+
+        <input type="file" name="document2" data-validation="file">
+        
+        <br/><br/><br/>
+
+        <input type="file" name="document3" data-validation="file">
+        
+        <br/><br/><br/>
+      
+        <button type="button" onclick="values_Form()">Enviar Datos</button>
       </form>
     </div>
   </body>

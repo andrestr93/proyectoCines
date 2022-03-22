@@ -1,0 +1,95 @@
+@font-face {
+    font-family: serif_pro;
+    src: url(../fuentes/SourceSerifPro-Black.ttf);
+  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: serif_pro;
+      font-size: 20px;
+    }
+    
+    header {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    
+    body {
+      background-color: white;
+    }
+
+
+input{
+
+    margin-left: 20px;
+    text-align: center;
+    border: none;
+
+  }
+
+
+  input[type="button"]{
+
+    color: black;
+    
+
+
+  }
+
+
+
+
+
+  input[type="submit"]{
+
+    cursor: pointer;
+
+
+  }
+
+
+  input[type="text"]{
+   border:none
+   text
+  }
+
+
+  h1{
+
+    margin-top: 10px;
+    text-align: center;
+
+  }
+
+  h2{
+
+    text-align: center;
+  }
+  
+  #container-principal{
+    margin-top: 50px;
+
+  }
+
+  div{
+
+    margin-top: 25px;
+  }
+
+  #alta_candidato{
+
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+  }
+
+  .container{
+    width: 250px;
+    height: 600px;
+    float: left;
+    border-left: 1px solid black;
+
+  }
+
