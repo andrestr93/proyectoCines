@@ -46,55 +46,49 @@
     <div id="container-principal">
       <div class="container">
         <h2>Sugerencia</h2>
-        <div id="caja">
-        <p id="sugerencia" , draggable="true"  drop="drop(event)";>
-          <script>
-            getInformation();
-          </script>
-        </p>
+        <div
+          id="caja"
+          ondragstart="event.dataTransfer.setData('text/plain',null)"
+          ,
+          draggable="true"
+        >
+          <p id="sugerencia">
+            <script>
+              getInformation();
+            </script>
+          </p>
+        </div>
       </div>
 
-
-        <p id="prueba"></p>
-      </div>
-
-      <div class="container" 
-      ondragover="onDragOver(event);
-      "ondrop="onDrop(event);">
+      <div
+        class="container"
+        id="cont-condiciones"
+        drop="drop(event);"
+      >
         <h2>Condiciones</h2>
 
-        <div id="caja2">
-
-
-
-        </div>
+        <div id="caja2"></div>
       </div>
 
-      <div class="container"  ondragover="onDragOver(event);">
+      <div class="container" id="cont-aceptado">
         <h2>Aceptado</h2>
-        <div id="caja3">
-
-
-        </div>
+        <div id="caja3"></div>
       </div>
 
-      <div class="container"  ondragover="onDragOver(event);">
+      <div class="container" id="cont-PREQM">
         <h2>PRE QM</h2>
-        
       </div>
-      <div class="container"  ondragover="onDragOver(event);">
+      <div class="container" dragover="onDragOver(event);" id="cont- QM">
         <h2>QM</h2>
-        <div id="caja4">
-
-
-        </div>
+        <div id="caja4"></div>
       </div>
-      <div class="container"  ondragover="onDragOver(event);">
+      <div
+        class="container"
+        dragover="onDragOver(event);"
+        id="cont-incorporado"
+      >
         <h2>Incorporado</h2>
-        <div id="caja5">
-
-
-        </div>
+        <div id="caja5"></div>
       </div>
     </div>
   </body>
