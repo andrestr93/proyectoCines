@@ -1,15 +1,9 @@
 
-
-
+let arrayContact = []
 let dragged;
-
 function create_Petition() {
 
-
     peticion = document.getElementById("peticion").value;
-
-    console.log(peticion)
-
 }
 
 function values_Form() {
@@ -25,7 +19,6 @@ function values_Form() {
     let telefono = form.telephone.value
 
     let tecnologia = form.tecnology.value
-
 
     let documento1 = form.document1.value
 
@@ -48,74 +41,109 @@ function values_Form() {
     }
 
 
-    localStorage.setItem("contacto", JSON.stringify(contacto));
+    if (localStorage.getItem("data") == null) {
+
+        localStorage.setItem('data', '[]');
+    }
+
+    arrayContact = JSON.parse(localStorage.getItem('data'));
+
+    arrayContact.push(contacto)
+
+    
 
 
+    localStorage.setItem('data', JSON.stringify(arrayContact))
+
+    location.href = "./crear_peticion.html";
 
 
 }
-
-
-
 
 
 
 function getInformation() {
 
-    const contacto = JSON.parse(localStorage.getItem("contacto"))
-    document.getElementById('sugerencia').innerHTML = "Nombre: " + contacto.nombre + " " + contacto.apellidos + " documentos :  " + contacto.documento1 + " " +
-        "email : " + contacto.email + " tecnologia: " + contacto.tecnologia + " </br> " + "Telefono " + contacto.telefono
+
+    if (localStorage.getItem('data') != null) {
+
+
+
+       let  arrayContactaux = JSON.parse(localStorage.getItem('data'));
+
+       arrayContactaux.forEach(element => {
+
+        document.getElementById("sugerencia").innerHTML = element.nombre + "\n" + element.apellidos
+
+    });
+
+
+    console.log(arrayContactaux.lenght)
+       
+
+
+
+    }
+
+
+
 
 
 }
 
 
-/* events fired on the draggable target */
-document.addEventListener("drag", function(event) {
+
+
+document.addEventListener("dragstart", function (event) {
+    // store a ref. on the dragged elem
+    dragged = event.target;
+    // make it half transparent
+    event.target.style.opacity = .5;
+}, false);
+
+document.addEventListener("dragend", function (event) {
+    // reset the transparency
+    event.target.style.opacity = "";
+}, false);
+-
+    /* events fired on the drop targets */
+    document.addEventListener("dragover", function (event) {
+        // prevent default to allow drop
+        event.preventDefault();
+    }, false);
+
+document.addEventListener("dragenter", function (event) {
+    // highlight potential drop target when the draggable element enters it
+    if (event.target.className == "container") {
+        event.target.style.background = "#FFC629";
+    }
 
 }, false);
 
-document.addEventListener("dragstart", function(event) {
-  // store a ref. on the dragged elem
-  dragged = event.target;
-  // make it half transparent
-  event.target.style.opacity = .5;
-}, false);
-
-document.addEventListener("dragend", function(event) {
-  // reset the transparency
-  event.target.style.opacity = "";
-}, false);
-
-/* events fired on the drop targets */
-document.addEventListener("dragover", function(event) {
-  // prevent default to allow drop
-  event.preventDefault();
-}, false);
-
-document.addEventListener("dragenter", function(event) {
-  // highlight potential drop target when the draggable element enters it
-  if (event.target.className == "container") {
-    event.target.style.background = "purple";
-  }
+document.addEventListener("dragleave", function (event) {
+    // reset background of potential drop target when the draggable element leaves it
+    if (event.target.className == "container") {
+        event.target.style.background = "";
+    }
 
 }, false);
 
-document.addEventListener("dragleave", function(event) {
-  // reset background of potential drop target when the draggable element leaves it
-  if (event.target.className == "container") {
-    event.target.style.background = "";
-  }
+document.addEventListener("drop", function (event) {
+    // prevent default action (open as link for some elements)
+    event.preventDefault();
+    // move dragged elem to the selected drop target
+    if (event.target.className == "container") {
+        event.target.style.background = "";
+        dragged.parentNode.removeChild(dragged);
+        event.target.appendChild(dragged);
+        if (event.target.id == "cont-incorporado") {
+            let caja = document.getElementById("caja")
+            caja.setAttribute("draggable", false)
+        }
+
+    }
 
 }, false);
 
-document.addEventListener("drop", function(event) {
-  // prevent default action (open as link for some elements)
-  event.preventDefault();
-  // move dragged elem to the selected drop target
-  if (event.target.className == "container") {
-    event.target.style.background = "";
-    dragged.parentNode.removeChild( dragged );
-    event.target.appendChild( dragged );
-  }
-}, false);
+
+
