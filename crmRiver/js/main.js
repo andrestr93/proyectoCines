@@ -50,7 +50,7 @@ function values_Form() {
 
     arrayContact.push(contacto)
 
-    
+
 
 
     localStorage.setItem('data', JSON.stringify(arrayContact))
@@ -65,23 +65,27 @@ function values_Form() {
 function getInformation() {
 
 
+    let fragment = document.createDocumentFragment();
+
     if (localStorage.getItem('data') != null) {
 
+        let contenedor = document.getElementById("caja")
+        let arrayContactaux = JSON.parse(localStorage.getItem('data'));
+
+        arrayContactaux.forEach(element => {
+
+            let list = document.createElement("p")
+            list.id = "elemento-caja";
 
 
-       let  arrayContactaux = JSON.parse(localStorage.getItem('data'));
+            list.innerHTML = element.nombre + "</br>" + element.telefono + "</br>" +  element.email;
 
-       arrayContactaux.forEach(element => {
-
-        document.getElementById("sugerencia").innerHTML = element.nombre + "\n" + element.apellidos
-
-    });
+            fragment.appendChild(list)
 
 
-    console.log(arrayContactaux.lenght)
-       
+        });
 
-
+        contenedor.appendChild(fragment)
 
     }
 
