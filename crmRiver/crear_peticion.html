@@ -39,7 +39,6 @@
     <div>
       <input type="text" placeholder="Nombre de la petición" id="peticion" />
       <button type="button" onclick="create_Petition()">Crear Peticion</button>
-      <br /><br />
       <a id="alta_candidato" href="formulario.html">Alta candidato</a>
     </div>
 
@@ -48,7 +47,9 @@
         <h2>Sugerencia</h2>
         <div
           id="caja"
-          ondragstart="event.dataTransfer.setData('text/plain',null)",draggable="true">
+          ondragstart="event.dataTransfer.setData('text/plain',null)"
+          ,draggable="true"
+        >
           <p id="sugerencia">
             <script>
               getInformation();
@@ -57,11 +58,7 @@
         </div>
       </div>
 
-      <div
-        class="container"
-        id="cont-condiciones"
-        drop="drop(event);"
-      >
+      <div class="container" id="cont-condiciones" drop="drop(event);">
         <h2>Condiciones</h2>
 
         <div id="caja2"></div>
@@ -74,17 +71,19 @@
 
       <div class="container" id="cont-PREQM">
         <h2>PRE QM</h2>
-      </div>
-      <div class="container" dragover="onDragOver(event);" id="cont- QM">
-        <h2>QM</h2>
-        <div id="caja4"></div>
-      </div>
-      <div
-        class="container"
-        id="cont-incorporado"
-      >
-        <h2>Incorporado</h2>
         <div id="caja5"></div>
+      </div>
+      <div class="container" id="cont- QM">
+        <h2>QM</h2>
+        <div id="caja6"></div>
+      </div>
+      <div class="container" id="cont-incorporado">
+        <h2>Incorporado</h2>
+        <div id="caja7"></div>
+      </div>
+      <div class="container" id="cont-papelera">
+        <img src="./img/papelera.png"/>
+        <div id="caja8"></div>
       </div>
     </div>
   </body>

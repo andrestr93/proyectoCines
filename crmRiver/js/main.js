@@ -74,21 +74,39 @@ function getInformation() {
 
         arrayContactaux.forEach(element => {
 
-            let list = document.createElement("p")
-            list.id = "elemento-caja";
-
-
-            list.innerHTML = element.nombre + "</br>" + element.telefono + "</br>" +  element.email;
-
+            let list = document.createElement("p");
+            list.setAttribute("draggable", true);
+            list.innerHTML = element.nombre + "</br>" + element.telefono + "</br>" + element.email + "</br>" + "<button onclick = "+infoDocuments(arrayContactaux) +"id= 'but-documentos'>Revisar documentos</button>";
             fragment.appendChild(list)
-
-
         });
 
         contenedor.appendChild(fragment)
 
     }
 
+
+
+
+
+}
+
+
+ function infoDocuments(arrayContactaux){
+
+    arrayContactaux.forEach(element => {
+
+        console.log(element.nombre)
+        
+    });
+  
+
+    /*
+    arraycandidate.forEach(element => {
+        
+        element.nombre
+    });
+*/
+  
 
 
 
@@ -120,6 +138,10 @@ document.addEventListener("dragenter", function (event) {
     // highlight potential drop target when the draggable element enters it
     if (event.target.className == "container") {
         event.target.style.background = "#FFC629";
+        if (event.target.id === "cont-papelera") {
+            event.target.style.background = "#D62D2D";
+        }
+
     }
 
 }, false);
@@ -140,7 +162,7 @@ document.addEventListener("drop", function (event) {
         event.target.style.background = "";
         dragged.parentNode.removeChild(dragged);
         event.target.appendChild(dragged);
-        if (event.target.id == "cont-incorporado") {
+        if (event.target.id == "elemento-caja") {
             let caja = document.getElementById("caja")
             caja.setAttribute("draggable", false)
         }

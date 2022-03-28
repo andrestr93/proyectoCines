@@ -32,22 +32,12 @@ input{
   input[type="button"]{
 
     color: black;
-    
-
 
   }
-
-
-
-
-
   input[type="submit"]{
 
     cursor: pointer;
-
-
   }
-
 
   input[type="text"]{
    border:none
@@ -86,10 +76,44 @@ input{
   }
 
   .container{
-    width: 250px;
+    width: 200px;
     height: 600px;
     float: left;
     border-left: 1px solid black;
+
+  }
+
+  p{
+
+    text-align: center;
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+  }
+
+  #cont-papelera{
+
+  padding-bottom: 150px;
+
+  }
+
+
+  #cont-papelera img{
+    height: 50px;
+    margin-left: auto;   
+    margin-right: auto;
+    display: block;
+
+  }
+
+  #but-documentos{
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    
+
 
   }
 

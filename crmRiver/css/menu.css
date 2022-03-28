@@ -36,7 +36,9 @@
     color: black;
     font-weight: bold;
     font-size: 20px;
-    padding: 10px
+    padding: 10px;
+
+    
 
   }
   
@@ -58,8 +60,16 @@
 
   }
 
- 
-  
   #menu a {
     display: block;
   }
+
+  #container-img{
+
+   float: right;
+    display: block;
+
+  }
+
+ 
+
