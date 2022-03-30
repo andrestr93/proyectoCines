@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { title } from 'process';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -23,7 +24,8 @@ describe('AppComponent', () => {
   it(`should have as title 'proyecto-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('proyecto-angular');
+    expect(app.title).toEqual('tutorial angular');
+  
   });
 
   it('should render title', () => {

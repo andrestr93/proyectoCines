@@ -1,0 +1,33 @@
+
+
+<!--
+  TODO: TENEMOS UNA PLANTILLA GENERICA DE LISTADOS GENERICOS DONDE ESTA TODA LA LOGICA Y/O CONDICIONES POR SI NO HAY ITEMS 
+  TODO: PARA ENLAZAR NUESTRA PLANTILLA CON EL LISTADO DE PELICULAS 
+  TODO: TENEMOS QUE INSERTAR LA ETIQUETA NG-CONTENT CON EL ATRIBUTO SELECT [NOMBRE DEL CONTENIDO] EN ESTE CASO CONTENT
+  
+-->
+
+
+
+<div *ngIf="!listado">
+  <img src="https://media2.giphy.com/media/3y0oCOkdKKRi0/giphy.gif?cid=ecf05e47s649b3fltmsp929qecpqyf9xc4yg63nxlm2nu1qg&rid=giphy.gif&ct=g" />
+</div>
+
+
+<div *ngIf="listado?.length === 0">
+  <p>NO hay peliculas que mostrar</p>
+</div>
+
+
+<ng-container *ngIf="listado && listado.length > 0 ">
+
+  <ng-content select="[contenido]"></ng-content>
+
+
+</ng-container>
+
+
+
+
+
+

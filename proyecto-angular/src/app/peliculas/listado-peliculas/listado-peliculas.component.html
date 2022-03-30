@@ -1,0 +1,20 @@
+<!--*TODO: AQUI TENEMOS LA LOGICA DEL HTML DE LA LISTA DE PELICULAS -->
+
+<app-listado-general [listado] = "peliculas">
+  <ng-container contenido>
+    <div *ngFor="let pelicula of peliculas; let index = index">
+      <div id="container-movie">
+
+        Pelicula {{ index+1 }}
+        <br/>
+        <br/>
+         {{ pelicula.titulo }}
+        <p>
+          <br/>
+          {{ pelicula.year | date:"dd-MM-yyyy" }}
+          <button (click)="removeItem(index)">remover</button>
+        </p>
+      </div>
+    </div>
+  </ng-container>
+</app-listado-general>

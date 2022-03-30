@@ -1,0 +1,13 @@
+<app-listado-general [listado]="actores">
+  <ng-container contenido>
+    <div *ngFor="let actor of actores; let index = index">
+      <div id="container-actors">
+        Actor {{ index }} {{ actor.nombre }}
+        <p>
+          {{ actor.age }}
+          <button (click)="removeItem(index)">remover</button>
+        </p>
+      </div>
+    </div>
+  </ng-container>
+</app-listado-general>

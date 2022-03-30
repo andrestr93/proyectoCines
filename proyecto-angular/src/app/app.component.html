@@ -1,8 +1,42 @@
-<h1>Hola como estas </h1>
 
-{{title}}
 
-<div>esto es un contenedor y dentro ocn la interpolacion hay una funcion {{prueba()}}</div>
+<title></title>
 
-<div>Esto son los datos de la pelicula {{pruebaPelicula()}}</div>
-<div>Fecha de lanzamiento {{pruebaPelicula().fecha_lanzamiento | date: "dd-MM-yyyy"}}</div>
+
+<!-- TODO: CONTROLADOR PRINCIPAL :
+
+    TODO: LA ETIQUETA DEL SELECTOR APP-LISTADO-PELICULAS LE PASAMOS UN ARRAY CON PELICULAS 
+    TODO: TANTO EN ESTRENOS COMO PROXIMAMENTE 
+
+
+-->
+
+<app-menu></app-menu>
+
+<h3>En cines</h3>
+<app-listado-peliculas [peliculas] = "estrenos"></app-listado-peliculas>
+
+
+<h3>Futuros estrenos</h3>
+
+<app-listado-peliculas [peliculas]="proximamente"></app-listado-peliculas>
+
+
+<h3>Actores de prestigio </h3>
+
+
+<app-listado-actores [actores] = "actores"></app-listado-actores>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
