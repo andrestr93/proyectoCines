@@ -1,19 +1,19 @@
 <!--*TODO: AQUI TENEMOS LA LOGICA DEL HTML DE LA LISTA DE PELICULAS -->
 
-<app-listado-general [listado] = "peliculas">
+<app-listado-general [listado]="peliculas">
   <ng-container contenido>
-    <div *ngFor="let pelicula of peliculas; let index = index">
-      <div id="container-movie">
-
-        Pelicula {{ index+1 }}
-        <br/>
-        <br/>
-         {{ pelicula.titulo }}
-        <p>
-          <br/>
-          {{ pelicula.year | date:"dd-MM-yyyy" }}
-          <button (click)="removeItem(index)">remover</button>
-        </p>
+    <div class="peliculas-contenedor">
+      <div
+        *ngFor="let pelicula of peliculas; let index = index"
+        id="container-movie"
+      >
+        <a><img [src]="pelicula.poster" alt="poster" /></a>
+        <p>{{ pelicula.titulo }}</p>
+        <p>{{ pelicula.year | date: "dd-MM-yyyy" }}</p>
+        <div class="container-button">
+          <a mat-flat-button color="primary">Editar</a>
+          <button mat-flat-button color="warn" type="button">Borrar</button>
+        </div>
       </div>
     </div>
   </ng-container>

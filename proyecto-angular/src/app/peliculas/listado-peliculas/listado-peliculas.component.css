@@ -1,21 +1,52 @@
+
+
+
+.peliculas-contenedor{
+
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
 #container-movie{
 
 
-    border: 1px solid black;
     font-size: 20px;
     font-weight: bold;
+    padding: 20px;
+    border-left: 1px solid black;
+    text-align: center;
 
 }
+
+img{
+   width: 250px;
+   height: 280px;
+
+
+}
+
+
 
 #container-movie p{
 
-    font-size: 15px;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 button{
-
     font-size: 15px;
     font-weight: bold;
-    
-    
 }
+
+
+
+
+.container-button a {
+
+    margin-right: 20px;
+}
+

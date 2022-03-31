@@ -2,7 +2,9 @@
   <ng-container contenido>
     <div *ngFor="let actor of actores; let index = index">
       <div id="container-actors">
-        Actor {{ index }} {{ actor.nombre }}
+        Actor {{ index+1 }} {{ actor.nombre }}
+        <br/>
+        <br/>
         <p>
           {{ actor.age }}
           <button (click)="removeItem(index)">remover</button>

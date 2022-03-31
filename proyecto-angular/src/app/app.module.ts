@@ -10,6 +10,8 @@ import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { materialize } from 'rxjs';
+import { RatingComponent } from './utilidades/rating/rating.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { materialize } from 'rxjs';
     ListadoPeliculasComponent,
     ListadoGeneralComponent,
     ListadoActoresComponent,
-    MenuComponent
+    MenuComponent,
+    RatingComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
