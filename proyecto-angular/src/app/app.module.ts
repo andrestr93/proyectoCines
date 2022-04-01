@@ -11,6 +11,11 @@ import { MaterialModule } from './material/material.module';
 import { materialize } from 'rxjs';
 import { RatingComponent } from './utilidades/rating/rating.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { IndiceActoresComponent } from './actores/indice-actores/indice-actores.component';
+import { IndiceGenerosComponent } from './generos/indice-generos/indice-generos.component';
+import { CrearGeneroComponent } from './generos/crear-genero/crear-genero.component';
+import { IndiceCinesComponent } from './cines/indice-cines/indice-cines.component';
+import { CrearCineComponent } from './cines/crear-cine/crear-cine.component';
 
 
 @NgModule({
@@ -20,7 +25,12 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     ListadoGeneralComponent,
     MenuComponent,
     RatingComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    IndiceActoresComponent,
+    IndiceGenerosComponent,
+    CrearGeneroComponent,
+    IndiceCinesComponent,
+    CrearCineComponent
   ],
   imports: [
     BrowserModule,

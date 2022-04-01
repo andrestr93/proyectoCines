@@ -7,9 +7,7 @@ import { Component, Directive, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent{
+  
    
 
-  manejarRated(voto: number): void {
-    alert(voto);
-  }
 }

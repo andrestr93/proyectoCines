@@ -82,7 +82,6 @@ export class LandingPageComponent implements OnInit {
       ];
     }, 100);
   }
-  title = 'esto es con la interpolacion ';
 
   estrenos;
   proximamente;

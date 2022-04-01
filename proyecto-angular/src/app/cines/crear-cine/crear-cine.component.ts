@@ -12,4 +12,8 @@ export class CrearCineComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  saveGenero(){
+    console.log("prueba cine")
+  }
+
 }

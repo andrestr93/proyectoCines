@@ -13,7 +13,7 @@ export class CrearGeneroComponent implements OnInit {
 
   saveGenero() {
     // TODO: METODO QUE UTILIZAMOS PARA REDIRIGIR A OTRA PESTAÑA , IMPORTANDO EL PAQUETE ANGULAR(ROUTER)
-    // TODO: Y LUEGO CON EL METODO NAVIGATE 
-    this.router.navigate(['generos']);
+    // TODO: Y LUEGO CON EL METODO NAVIGATE NAVEGAMOS ENTRE RUTAS
+    this.router.navigate(['/generos']);
   }
 }
