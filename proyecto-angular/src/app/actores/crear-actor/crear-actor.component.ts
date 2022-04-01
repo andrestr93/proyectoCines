@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crear-actor',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrearActorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
+  }
+
+  saveActores(){
+
+    this.router.navigate(["/actores"])
   }
 
 }

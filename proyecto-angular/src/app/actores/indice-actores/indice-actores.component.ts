@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-indice-actores',
@@ -11,5 +12,6 @@ export class IndiceActoresComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

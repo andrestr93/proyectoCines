@@ -1,19 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crear-cine',
   templateUrl: './crear-cine.component.html',
-  styleUrls: ['./crear-cine.component.css']
+  styleUrls: ['./crear-cine.component.css'],
 })
 export class CrearCineComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  saveCine() {
+    this.router.navigate(['/cines']);
   }
-
-  saveGenero(){
-    console.log("prueba cine")
-  }
-
 }
