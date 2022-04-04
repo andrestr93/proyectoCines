@@ -8,7 +8,6 @@ import { ListadoGeneralComponent } from './utilidades/listado-general/listado-ge
 import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { materialize } from 'rxjs';
 import { RatingComponent } from './utilidades/rating/rating.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { IndiceActoresComponent } from './actores/indice-actores/indice-actores.component';
@@ -22,7 +21,11 @@ import { EditarActorComponent } from './actores/editar-actor/editar-actor.compon
 import { EditarGeneroComponent } from './generos/editar-genero/editar-genero.component';
 import { EditarPeliculaComponent } from './peliculas/editar-pelicula/editar-pelicula.component';
 import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
-
+// TODO: IMPORTAMOS EL PAQUETE REACTIVEFORMSMODULE
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormularioGeneroComponent } from './generos/formulario-genero/formulario-genero.component';
+import { FiltroPeliculasComponent } from './peliculas/filtro-peliculas/filtro-peliculas.component';
+ 
 
 @NgModule({
   declarations: [
@@ -42,7 +45,9 @@ import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
     EditarActorComponent,
     EditarGeneroComponent,
     EditarPeliculaComponent,
-    EditarCineComponent
+    EditarCineComponent,
+    FormularioGeneroComponent,
+    FiltroPeliculasComponent, 
 
     
 
@@ -51,7 +56,8 @@ import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,22 @@
+h2 {
+  margin-left: 20px;
+}
+form {
+  margin-left: 20px;
+}
+
+mat-form-field {
+  padding-left: 50px;
+  width: 100%;
+  max-width: 500px;
+}
+
+mat-checkbox {
+  margin-left: 15px;
+}
+
+button{
+
+    margin-top: 25px;
+    margin-left: 15px;
+}

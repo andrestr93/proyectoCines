@@ -1,5 +1,11 @@
 
 button{
 
-    margin: 25px;
+    margin-right: 5px;
+}
+mat-form-field{
+
+    width: 100%;
+    max-width: 500px;
+
 }
