@@ -18,6 +18,10 @@ import { IndiceCinesComponent } from './cines/indice-cines/indice-cines.componen
 import { CrearCineComponent } from './cines/crear-cine/crear-cine.component';
 import { CrearPeliculaComponent } from './peliculas/crear-pelicula/crear-pelicula.component';
 import { CrearActorComponent } from './actores/crear-actor/crear-actor.component';
+import { EditarActorComponent } from './actores/editar-actor/editar-actor.component';
+import { EditarGeneroComponent } from './generos/editar-genero/editar-genero.component';
+import { EditarPeliculaComponent } from './peliculas/editar-pelicula/editar-pelicula.component';
+import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
 
 
 @NgModule({
@@ -34,7 +38,14 @@ import { CrearActorComponent } from './actores/crear-actor/crear-actor.component
     IndiceCinesComponent,
     CrearCineComponent,
     CrearPeliculaComponent,
-    CrearActorComponent
+    CrearActorComponent,
+    EditarActorComponent,
+    EditarGeneroComponent,
+    EditarPeliculaComponent,
+    EditarCineComponent
+
+    
+
   ],
   imports: [
     BrowserModule,
