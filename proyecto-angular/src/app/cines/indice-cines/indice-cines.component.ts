@@ -15,7 +15,7 @@ export class IndiceCinesComponent implements OnInit {
   }
 
   prueba(){
-    console.log("prueba")
+   
   }
 
 }

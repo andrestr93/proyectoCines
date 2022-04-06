@@ -26,6 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormularioGeneroComponent } from './generos/formulario-genero/formulario-genero.component';
 import { FiltroPeliculasComponent } from './peliculas/filtro-peliculas/filtro-peliculas.component';
 import { FormularioActoresComponent } from './actores/formulario-actores/formulario-actores.component';
+import { InputImgComponent } from './utilidades/input-img/input-img.component';
  
 
 @NgModule({
@@ -49,7 +50,8 @@ import { FormularioActoresComponent } from './actores/formulario-actores/formula
     EditarCineComponent,
     FormularioGeneroComponent,
     FiltroPeliculasComponent,
-    FormularioActoresComponent, 
+    FormularioActoresComponent,
+    InputImgComponent, 
 
     
 

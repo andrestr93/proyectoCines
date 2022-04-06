@@ -20,7 +20,7 @@ export class EditarGeneroComponent implements OnInit {
   guardarCambios(genero:generoCreacionDTO) {
     // TODO: METODO QUE UTILIZAMOS PARA REDIRIGIR A OTRA PESTAÑA , IMPORTANDO EL PAQUETE ANGULAR(ROUTER)
     // TODO: Y LUEGO CON EL METODO NAVIGATE NAVEGAMOS ENTRE RUTAS
-    console.log(genero)
+    
     this.router.navigate(['/generos']);
 
   }
