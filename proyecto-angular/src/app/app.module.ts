@@ -27,6 +27,7 @@ import { FormularioGeneroComponent } from './generos/formulario-genero/formulari
 import { FiltroPeliculasComponent } from './peliculas/filtro-peliculas/filtro-peliculas.component';
 import { FormularioActoresComponent } from './actores/formulario-actores/formulario-actores.component';
 import { InputImgComponent } from './utilidades/input-img/input-img.component';
+import { InputMarkdownComponent } from './utilidades/input-markdown/input-markdown.component';
  
 
 @NgModule({
@@ -51,7 +52,8 @@ import { InputImgComponent } from './utilidades/input-img/input-img.component';
     FormularioGeneroComponent,
     FiltroPeliculasComponent,
     FormularioActoresComponent,
-    InputImgComponent, 
+    InputImgComponent,
+    InputMarkdownComponent, 
 
     
 

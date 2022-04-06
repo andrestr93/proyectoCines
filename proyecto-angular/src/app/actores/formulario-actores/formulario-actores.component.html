@@ -15,13 +15,12 @@
       <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
   <app-input-img [urlImagenActual]="modelo?.foto" (archivoseleccionado)="archivoSeleccionado($event)"></app-input-img>
-
-  
-
+  <app-input-markdown></app-input-markdown>
   <div>
       <button mat-flat-button color = "primary" [disabled]="form.invalid">Guardar Cambios</button>
       <a mat-stroked-button routerLink="/actores">Cancelar</a>
   </div>
+ 
 </form>
 
 

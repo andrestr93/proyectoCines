@@ -13,7 +13,7 @@ export class EditarActorComponent implements OnInit {
   modelo: actorDTO = {
     nombre: 'Felipe',
     fechaNacimiento: new Date(),
-    foto: 'https://m.media-amazon.com/images/I/51e6kpkyuIL._AC_SY355_.jpg'
+    foto: 'https://www.researchgate.net/profile/Maria-Monreal/publication/315108532/figure/fig1/AS:472492935520261@1489662502634/Figura-2-Avatar-que-aparece-por-defecto-en-Facebook.png'
   };
   ngOnInit(): void {
     this.activateRoute.params.subscribe((params) => {
