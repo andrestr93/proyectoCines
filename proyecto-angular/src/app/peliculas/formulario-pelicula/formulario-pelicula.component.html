@@ -22,9 +22,27 @@
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
   <h4>Seleccionar Poster</h4>
-  <app-input-img></app-input-img>
+  <app-input-img
+  [urlImagenActual]="modelo?.poster"
+   (archivoseleccionado) = "archivoSeleccionado($event)"></app-input-img>
   <h4>Resumen de la Pelicula</h4>
-  <app-input-markdown></app-input-markdown>
+  <app-input-markdown [contenidoMarkdown]="modelo?.resumen" (changeMarkDown)="changueMarkDown($event)" [placeHolderTextArea]="'Resumen'"></app-input-markdown>
+ 
+  <h4>Seleccione los generos</h4>
+
+  <app-selector-multiple [Seleccionados]="generosSeleccionados" [NoSeleccionados]="generosNoSeleccionados"></app-selector-multiple>
+ 
+
+  <h4>Seleccione los cines</h4>
+
+  <app-selector-multiple [Seleccionados]="cinesSeleccionados" [NoSeleccionados]="cinesNoSeleccionados"></app-selector-multiple>
+ 
+
+  <h4>Seleccione los Actores</h4>
+
+
+  <app-autocomplete-actores></app-autocomplete-actores>
+
   <div>
     <button mat-flat-button color="primary" [disabled]="form.invalid">
       Guardar Cambios
